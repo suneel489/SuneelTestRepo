@@ -22,7 +22,7 @@ public class ATC_001_LoginApplication extends Baseclass {
 
 	public static String password = Utilities.Getdata("TestData", "Password");
 
-	@Test(groups = {"Regression","Sanity","ExistingAutoTenant"})
+	@Test(groups = {"Regression","Sanity"})
 	public void Login_Application() throws InterruptedException, IOException {
 
 		PropertyConfigurator.configure("log4j.properties");

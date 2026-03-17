@@ -766,61 +766,7 @@ public class Baseclass {
     }
 
 
-    public void SentEmail() throws IOException {
-
-
-        Mail mail1 = new Mail();
-
-        // String[] toEmails =
-        // {"kumari.ankita@accenture.com","mounika.bandari@accenture.com","suneel.damavarapu@accenture.com","v.ambati@accenture.com"};
-        // "imran.ul.hanif@accenture.com","ATCI.Momentum.PE.QA@accenture.com"
-        // String[] toEmails = {"shalini.panwar@accenture.com","PE.QA@accenture.com"};
-        String[] toEmails = Email;
-        Personalization personalization = new Personalization();
-
-        for (int i = 0, size = toEmails.length; i < size; i++) {
-            personalization.addTo(new Email(toEmails[i]));
-        }
-        mail1.addPersonalization(personalization);
-        mail1.setFrom(new Email("no-reply@lower.momentum.accenture.com"));
-        mail1.setSubject("Momentum Automation-Sanity Test Results");
-        mail1.addContent(new Content("text/html",
-                "Hi Team, <br> <br> Please find the Sanity Suite Execution results in above Extent Report. <br> <br> Best Regards, <br> Momentum Automation Team."));
-
-        String baseFileName = ExtentManager.fileName;
-        System.out.println("baseFileName--------------------->" + baseFileName);
-        Path file = Paths.get(System.getProperty("user.dir") + File.separator + "Report"+ File.separator + "ExtentReport" + File.separator
-                + Utilities.currentdate() + File.separator + baseFileName);
-        Attachments attachments = new Attachments();
-        attachments.setFilename(file.getFileName().toString());
-        // attachments.setType("application/pdf");
-        attachments.setDisposition("attachment");
-
-        byte[] attachmentContentBytes = Files.readAllBytes(file);
-        String attachmentContent = Base64.getEncoder().encodeToString(attachmentContentBytes);
-        attachments.setContent(attachmentContent);
-        mail1.addAttachments(attachments);
-        ////////////////////////////
-
-        SendGrid sg = new SendGrid("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");
-
-        Request request = new Request();
-        try {
-            request.setMethod(Method.POST);
-            request.setEndpoint("mail/send");
-            request.setBody(mail1.build());
-            sg.api(request);
-            // logger.info("email sent... ");
-            System.out.println("Email Sent");
-            test.log(LogStatus.PASS, "Eail sent Successfully with Extent Report... ");
-        } catch (Exception ex) {
-            System.out.println("Email Not Sent");
-            System.out.println(ex.getMessage());
-            // logger.info("Error while sending email : {}", ex.getMessage());
-        }
-
-
-    }
+    
 
     public static void Mouseover(WebElement element, String stepname) throws IOException {
         try {

@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="SwagLabs" allow-return-values="true">
+	<listeners>
+		<listener class-name="com.ExtentReportListener.CustomListeners"/>
+	</listeners>
+	<!--  -->
+	<test name="Regression">
+		<classes>
+		        
+		    <class name="com.qa.ATC.ATC_001_LoginApplication"/>
+		        		
+		</classes>
+	</test>
+	<!--  Test  -->
+</suite>
+		<!--  Suite  -->

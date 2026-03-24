@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-17T19:24:50 IST" name="SwagLabs" finished-at="2026-03-17T19:25:05 IST" duration-ms="14874">
+  <suite started-at="2026-03-21T07:31:32 IST" name="SwagLabs" finished-at="2026-03-21T07:31:49 IST" duration-ms="16920">
     <groups>
       <group name="Sanity">
         <method signature="ATC_001_LoginApplication.Login_Application()[pri:0, instance:com.qa.ATC.ATC_001_LoginApplication@43cf6ea3]" name="Login_Application" class="com.qa.ATC.ATC_001_LoginApplication"/>
@@ -11,17 +11,17 @@
         <method signature="ATC_001_LoginApplication.Login_Application()[pri:0, instance:com.qa.ATC.ATC_001_LoginApplication@43cf6ea3]" name="Login_Application" class="com.qa.ATC.ATC_001_LoginApplication"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2026-03-17T19:24:50 IST" name="Regression" finished-at="2026-03-17T19:25:05 IST" duration-ms="14874">
+    <test started-at="2026-03-21T07:31:32 IST" name="Regression" finished-at="2026-03-21T07:31:49 IST" duration-ms="16920">
       <class name="com.qa.ATC.ATC_001_LoginApplication">
-        <test-method is-config="true" signature="Beforesuite()[pri:0, instance:com.qa.ATC.ATC_001_LoginApplication@43cf6ea3]" started-at="2026-03-17T19:24:44 IST" name="Beforesuite" finished-at="2026-03-17T19:24:50 IST" duration-ms="5434" status="PASS">
+        <test-method is-config="true" signature="Beforesuite()[pri:0, instance:com.qa.ATC.ATC_001_LoginApplication@43cf6ea3]" started-at="2026-03-21T07:31:19 IST" name="Beforesuite" finished-at="2026-03-21T07:31:32 IST" duration-ms="13542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Beforesuite -->
-        <test-method is-config="true" signature="Test()[pri:0, instance:com.qa.ATC.ATC_001_LoginApplication@43cf6ea3]" started-at="2026-03-17T19:24:50 IST" name="Test" finished-at="2026-03-17T19:24:50 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="Test()[pri:0, instance:com.qa.ATC.ATC_001_LoginApplication@43cf6ea3]" started-at="2026-03-21T07:31:33 IST" name="Test" finished-at="2026-03-21T07:31:33 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test -->
-        <test-method is-config="true" signature="beforeTC(java.lang.reflect.Method)[pri:0, instance:com.qa.ATC.ATC_001_LoginApplication@43cf6ea3]" started-at="2026-03-17T19:24:50 IST" name="beforeTC" finished-at="2026-03-17T19:24:50 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="beforeTC(java.lang.reflect.Method)[pri:0, instance:com.qa.ATC.ATC_001_LoginApplication@43cf6ea3]" started-at="2026-03-21T07:31:33 IST" name="beforeTC" finished-at="2026-03-21T07:31:33 IST" duration-ms="23" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,15 +32,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTC -->
-        <test-method signature="Login_Application()[pri:0, instance:com.qa.ATC.ATC_001_LoginApplication@43cf6ea3]" started-at="2026-03-17T19:24:50 IST" name="Login_Application" finished-at="2026-03-17T19:24:57 IST" duration-ms="6703" status="PASS">
+        <test-method signature="Login_Application()[pri:0, instance:com.qa.ATC.ATC_001_LoginApplication@43cf6ea3]" started-at="2026-03-21T07:31:33 IST" name="Login_Application" finished-at="2026-03-21T07:31:42 IST" duration-ms="8850" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_Application -->
-        <test-method is-config="true" signature="CloseDriver()[pri:0, instance:com.qa.ATC.ATC_001_LoginApplication@43cf6ea3]" started-at="2026-03-17T19:24:59 IST" name="CloseDriver" finished-at="2026-03-17T19:25:05 IST" duration-ms="6029" status="PASS">
+        <test-method is-config="true" signature="CloseDriver()[pri:0, instance:com.qa.ATC.ATC_001_LoginApplication@43cf6ea3]" started-at="2026-03-21T07:31:43 IST" name="CloseDriver" finished-at="2026-03-21T07:31:49 IST" duration-ms="6009" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseDriver -->
-        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:com.qa.ATC.ATC_001_LoginApplication@43cf6ea3]" started-at="2026-03-17T19:25:05 IST" name="AfterSuite" finished-at="2026-03-17T19:25:05 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:com.qa.ATC.ATC_001_LoginApplication@43cf6ea3]" started-at="2026-03-21T07:31:50 IST" name="AfterSuite" finished-at="2026-03-21T07:31:50 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterSuite -->
